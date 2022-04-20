@@ -1,7 +1,5 @@
 let deleteEl = document.getElementById("delete-el")
 let ulEL = document.getElementById("ul-el")
-// let inputEl = document.getElementById("input-el")
-// let saveEl = document.getElementById("save-el")
 let saveTab = document.getElementById("save-tab")
 
 let textArray = []
@@ -24,14 +22,6 @@ function render(){
     }
     ulEL.innerHTML = listItems
 }
-
-// saveEl.addEventListener("click", function(){
-//     textArray.push(inputEl.value)
-//     inputEl.value = ""
-
-//     localStorage.setItem("textArray", JSON.stringify(textArray))
-//     render()
-// })
 
 deleteEl.addEventListener("click", function(){
     localStorage.clear()
